@@ -1,0 +1,14 @@
+{
+    "name": "exportd365/php-app",
+    "description": "PHP application for D365 export functionality",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExportD365\\": "src/"
+        }
+    }
+}
+
