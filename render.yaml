@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: d365-export
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    region: oregon
+    healthCheckPath: /test.php
+    envVars:
+      - key: PHP_ENV
+        value: production
+
